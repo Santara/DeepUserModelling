@@ -1,0 +1,10 @@
+import pdb
+f = open('../DatasetsProcessed/dataset.txt','r')
+keyword = 'An overview is presented of the use of spatial data structures in spatial databases. The focus is on hierarchical data structures, including a number of variants of quadtrees, which sort the data with respect to the space occupied by it. Such techniques are known as spatial indexing methods. Hierarchical data structures are based on the principle of recursive decomposition. They are attractive because they are compact and depending on the nature of the data they save space as well as time and also facilitate operations such as search. Examples are given of the use of these data structures in the representation of different data types such as regions, points, rectangles, lines, and volumes.\n'
+count = 0
+# pdb.set_trace()
+for line in f:	
+	if line == keyword:
+		count += 1
+print "count = %d " % count
+f.close()
